@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Ephis" script="loot.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="146" head="78" body="95" legs="56" feet="1" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="sandals,2642,7;aghanim boots,7893,25000;boots of haste,2195,15000;crocodile boots,3982,5000;dragon scale boots,11114,50000;firewalker boots,9932,300000;fur boots,7457,4000;glacier boots,7892,14000;golden boots,2646,500000;leather boots,2643,10;magma boots,7894,18000;pirate boots,5462,3000;soft boots,6132,50000;steel boots,2645,20000;terra boots,7886,6000;zenit shoes,11297,50000"/>
+  <parameter key="shop_buyable" value="sandals,2642,14;boots of haste,2195,30000;crocodile boots,3982,10000;leather boots,2643,20;pirate boots,5462,6000"/>
+  </parameters>
+</npc>
+

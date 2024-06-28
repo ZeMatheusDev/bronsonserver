@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Jade" script="loot.lua" walkinterval="1900" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="142" head="6" body="19" legs="76" feet="19" addons="2"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="axe of Frerin,7434,150000;axe of main,3962,40000;barbarian axe,2429,600;battle axe,2378,250;daramarian waraxe,2440,10000;double axe,2387,1300;dragon lance,2414,22000;dramborleg,7413,120000;blood cleaver,7419,25000;durins axe,8924,200000;dwarven axe,2435,1400;fire axe,2432,10000;frost razor,7455,6000;great axe,2415,50000;guardian halberd,2427,20000;halberd,2381,1100;hand axe,2380,8;hatchet,2388,25;headchopper,7380,15000;knight axe,2430,3000;naginata,2426,12000;orcish axe,2428,120;ravagers axe,2443,30000;reapers axe,7420,30000;ripper lance,3964,1000;ruthless axe,6553,35000;stonecutter axe,2431,60000;twin axe,2447,19000;vile axe,7388,38000;war axe,2454,25000"/>
+  <parameter key="shop_buyable" value="barbarian axe,2429,1200;battle axe,2378,500;daramarian waraxe,2440,20000;double axe,2387,2600;dragon lance,2414,44000;dwarven axe,2435,2800;fire axe,2432,20000;frost razor,7455,12000;guardian halberd,2427,40000;halberd,2381,2200;hand axe,2380,16;hatchet,2388,50;headchopper,7380,30000;knight axe,2430,6000;naginata,2426,24000;orcish axe,2428,240;ripper lance,3964,2000;twin axe,2447,38000"/>
+ </parameters>
+</npc>

@@ -1,0 +1,32 @@
+Como funciona o sistema /ir?
+
+Digite "/ir" no chat e voce vera todos os locais que voce pode ir com esse sistema, usando por exemplo "/ir dragon1" e voce ira para a hunt.
+lembrando que 60 porcento das hunts do servidor nao estao no /ir e voce tera que ir andando ate elas, descubra o mapa!
+
+
+Qual a vantagem de ser VIP?
+
+As vantagens de ser VIP sao voce ganhar mais xp que os free players e poder ir para hunts especiais utilizando o sistema /ir
+
+
+Tem war system no servidor?
+
+Por enquanto nao temos o war system e logo logo iremos por mas por enquanto estamos apenas com o sistema de guilds!
+
+
+O servidor entrara em beta quando?
+
+Caso o servidor nao apresente Bugs iremos deixar em beta em uma semana
+
+
+Como vejo minhas promocoes?
+
+Todas vocacoes tem promotion 35-101-200-400
+menos orcs que tem promotion 30-50-75-101-150-400
+Orcs se promovem no promoOrc
+
+
+Onde ficam os npcs?
+
+A maioria deles ficam em dunedain para compra e venda de itens e runas
+a venda de itens em dunedain fica dentro da piramide, a de runa fica fora indo para cima

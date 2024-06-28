@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Updade Seller" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="335" head="0" body="0" legs="114" feet="114" addons="3"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="shop_buyable" value="Vip Sword,8931,8000000;Wand,2184,2000000;Rod,7958,2000000;Vip Legs,12604,8000000;Vip Shield,12605,8000000;Vip Helmet,12606,8000000;Vip Boots,12607,8000000;Vip Axe,8925,8000000;Vip Arrow,2352,8000000;Vip Staff,12609,8000000;Mage Vip Armor,8871,8000000;Paladin Armor Vip,8888,8000000;Knight Armor Vip,8889,8000000;Vip Club,8927,8000000;"/>
+	</parameters>
+1</npc>

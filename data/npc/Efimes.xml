@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Efimes" script="loot.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="150" head="58" body="19" legs="72" feet="71" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="leather legs,2649,8;aghanim legs,7895,18000;blue legs,7730,150000;brass legs,2478,140;chain legs,2648,125;crown legs,2488,18000;demon legs,2495,60000;dragon scale legs,2469,50000;dwarven legs,2504,7000;elven legs,2507,4000;glacier kilt,7896,7000;golden legs,2470,300000;knight legs,2477,12000;magma legs,7894,22000;mammoth fur shorts,7464,450;plate legs,2647,2000;studded legs,2468,35;terra legs,7885,13000;valar kilt,9777,500000;zenit legs,11298,45000"/>
+  <parameter key="shop_buyable" value="aghanim legs,7895,36000;brass legs,2478,600;chain legs,2648,300;dwarven legs,2504,10000;elven legs,2507,8000;glacier kilt,7896,14000;knight legs,2477,24000;leather legs,2649,16;mammoth fur shorts,7464,600;plate legs,2647,4000;studded legs,2468,70;terra legs,7885,28000"/>
+ </parameters>
+</npc>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Temani" script="loot.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="150" head="78" body="73" legs="60" feet="19" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="frozen plate,8887,600000;divine plate,8885,600000;molten plate,8886,600000;master archer's armor,8888,30000;windborn colossus armor,8883,60000;oceanborn leviathan armor,8884,60000;earthborn titan armor,8882,60000;pestilence omega,8880,60000;fireborn giant armor,8881,60000;aghanim robe,7898,40000;spirit cloak,8870,2000;focus cape,8871,6000;amazon armor,2500,14000;blue robe,2656,7000;brass armor,2465,250;demon armor,2494,30000;crown armor,2487,23000;dark lords cape,8865,24000;dwarven armor,2503,8000;elven armor,2505,7000;glacier robe,7897,6500;knight armor,2476,18000;magma coat,7899,18000;mammoth fur cape,7463,1400;dark armor,2489,1000;native armor,2508,900;noble armor,2486,9000;plate armor,2463,1650;red robe,2655,25000;robe of the underworld,8890,7000;scale armor,2483,500;spellweavers robe,11349,7000;terra mantle,7884,20000;skullmaster armor,8889,280000;golden armor,2466,60000;crystalline armor,8878,41000;divine cuirass,9776,400000;dragon scale mail,2492,40000;magic plate armor,2472,200000;legolas plate,8891,130000;valvet mantle,8868,7000;voltage armor,8879,45000;aegis armor,3968,30000;divine robe,8867,30000"/>
+  <parameter key="shop_buyable" value="aghanim robe,7898,80000;spirit cloak,8870,4000;focus cape,8871,12000;amazon armor,2500,28000;blue robe,2656,14000;brass armor,2465,500;crown armor,2487,46000;dark lords cape,8865,48000;dwarven armor,2503,16000;elven armor,2505,14000;glacier robe,7897,13000;knight armor,2476,36000;magma coat,7899,36000;mammoth fur cape,7463,2800;dark armor,2489,2000;native armor,2508,1800;noble armor,2486,18000;plate armor,2463,3300;red robe,2655,50000;robe of the underworld,8890,14000;scale armor,2483,1000;spellweavers robe,11349,14000;terra mantle,7884,40000;valvet mantle,8868,14000"/>
+  </parameters>
+</npc>

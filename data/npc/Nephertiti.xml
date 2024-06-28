@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Nephertiti" script="default.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="150" head="78" body="73" legs="60" feet="19" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="black pearl,2144,300;bronze amulet,2172,300;crown,2128,3000;crystal ring,2124,500;elven brooch,2122,200;emerald bangle,2127,700;gold ring,2179,800;silver amulet,2170,200;silver brooch,4845,250;small amethyst,2150,400;small diamond,2145,600;small emerald,2149,390;small ruby,2147,350;small sapphire,2146,300;white pearl,2143,100"/>
+  <parameter key="shop_buyable" value=""/>
+ </parameters>
+</npc>

@@ -1,0 +1,8 @@
+<npc name="osiris" script="promotion.lua" walkinterval="6000" floorchange="0" access="5" level="1" maglevel="1">
+	<health now="150" max="150"/>
+  <look type="148" head="114" body="114" legs="114" feet="114" addons="3"/>
+	<parameters>
+<parameter key="message_greet" value="Ola |PLAYERNAME|, Eu posso te promover, basta dizer promo1(35), promo2(101) e promo3(200)" />
+<parameter key="message_farewell" value="Boa sorte bravo aventureiro!" />
+	</parameters>
+</npc>

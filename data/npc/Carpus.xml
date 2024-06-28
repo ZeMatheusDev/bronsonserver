@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Carpus" script="loot.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="146" head="0" body="95" legs="60" feet="19" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="aghanim mask,7901,20000;amazon helmet,2499,4000;batwing hat,10016,1800;beholder helmet,3972,8000;brass helmet,2460,25;ceremonial mask,2501,12000;chain helmet,2458,15;charmer tiara,3971,600;crown helmet,2491,6000;crusader helmet,2497,10000;dark helmet,2490,600;demon helmet,2493,75000;devil helmet,2462,3000;dragon scale helmet,2506,50000;dwarven helmet,2502,1000;glacier mask,7902,1200;golden helmet,2471,200000;helmet of the ancients,2342,15000;horned helmet,2496,30000;horseman helmet,3969,900;iron helmet,2459,600;legion helmet,2480,100;magic sparks helmet,10316,45000;magician hat,2662,2500;ragnir helmet,7462,1100;royal helmet,2498,20000;skull helmet,5741,18000;soldier helmet,2481,225;steel helmet,2457,1100;strange helmet,2479,1200;terra hood,7903,900;viking helmet,2473,100;warrior helmet,2475,8000;winged helmet,2474,25000;yalahari mask,9778,120000;zenit helmet,11296,90000"/>
+  <parameter key="shop_buyable" value="aghanim mask,7901,44000;amazon helmet,2499,8000;batwing hat,10016,3600;beholder helmet,3972,16000;brass helmet,2460,50;ceremonial mask,2501,24000;chain helmet,2458,30;charmer tiara,3971,1200;crown helmet,2491,12000;crusader helmet,2497,20000;dark helmet,2490,1200;devil helmet,2462,6000;dwarven helmet,2502,2000;glacier mask,7902,2400;helmet of the ancients,2342,30000;horseman helmet,3969,1800;iron helmet,2459,1200;legion helmet,2480,200;magician hat,2662,5000;ragnir helmet,7462,2200;royal helmet,2498,40000;skull helmet,5741,36000;soldier helmet,2481,450;steel helmet,2457,2200;strange helmet,2479,2400;terra hood,7903,1800;viking helmet,2473,200;warrior helmet,2475,16000"/>
+
+ </parameters>
+</npc>

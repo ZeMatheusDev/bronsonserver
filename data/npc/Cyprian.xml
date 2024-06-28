@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Cyprian" script="loot.lua" walkinterval="0" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="146" head="0" body="95" legs="60" feet="19" corpse="2212"/>
+  <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="gladring,7414,150000;sapphire hammer,7437,6000;drachaku,11302,50000;dragonbone staff,7430,2200;clerical mace,2423,1100;studded club,2448,10;banana staff,3966,700;battle hammer,2417,350;bone club,2449,25;chaos mace,7427,9000;crystal mace,2445,10000;daramanian mace,2439,150;diamond sceptre,7387,16000;dragon hammer,2434,2500;grond,7415,100000;hammer of wrath,2444,30000;heavy mace,2452,35000;mace,2398,45;mammoth whopper,7381,800;morning star,2394,550;silver mace,2424,18000;skull staff,2436,6000;thunder hammer,2421,60000;war hammer,2391,18000"/>
+  <parameter key="shop_buyable" value="sapphire hammer,7437,12000;dragonbone staff,7430,4400;clerical mace,2423,2200;studded club,2448,20;banana staff,3966,1400;battle hammer,2417,700;bone club,2449,50;chaos mace,7427,18000;crystal mace,2445,20000;daramanian mace,2439,300;diamond sceptre,7387,32000;dragon hammer,2434,5000;mace,2398,90;mammoth whopper,7381,1600;morning star,2394,1100;silver mace,2424,36000;skull staff,2436,12000;war hammer,2391,36000"/>
+ </parameters>
+</npc>

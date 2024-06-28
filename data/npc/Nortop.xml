@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Nortop" script="default.lua" walkinterval="0" floorchange="0">
+	<health now="100" max="100"/>
+	<look type="128" head="77" body="0" legs="97" feet="114" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+		<parameter key="shop_buyable" value="parcel,2595,15;label,2599,15;letter,2597,10"/>
+	</parameters>
+</npc>

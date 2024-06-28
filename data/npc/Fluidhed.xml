@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Potion" script="default.lua" walkinterval="1900" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="138" head="3" body="114" legs="0" feet="0" addons="1" corpse="2212"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Eu vendo mana potions, strong mana potions e great mana potions."/>
+		<parameter key="shop_sellable" value="mana vial,7636,5;strong vial,7634,7;great vial,7635,10"/>
+		<parameter key="shop_buyable" value="mana potion,7620,300;strong mana potion,7589,520;great mana potion,7590,920"/>
+	</parameters>
+</npc>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Comerciante" script="blueberry.lua" walkinterval="0" floorchange="0">
+	<health now="150" max="150"/>
+	<look type="128" head="0" body="95" legs="60" feet="19" corpse="2212"/>
+  <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Ola |PLAYERNAME|, diga 'trocar' para trocarmos 100 blueberrys por 10 mana potions"/>
+ </parameters>
+</npc>

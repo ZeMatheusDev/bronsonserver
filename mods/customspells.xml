@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mod name="Custom Spells" version="1.0" author="The Forgotten Server" contact="otland.net" enabled="yes">
+	<!-- Custom Runes -->
+	<rune name="Polymorph" id="2306" charges="100" lvl="101" maglv="28" exhaustion="1000" blocktype="solid" needtarget="1" allowfaruse="1" event="script" value="customspells/polymorph.lua"/>
+	<rune name="Combustion" id="2276" charges="1" lvl="80" maglv="28" exhaustion="1000" blocktype="solid" needtarget="1" allowfaruse="1" event="script" value="customspells/combustion.lua"/>
+	<rune name="Energy Arrow" id="2281" charges="100" maglv="20" exhaustion="1000" blocktype="solid" allowfaruse="1" event="script" value="customspells/energy wave.lua"/>
+	<rune name="Magic Prison" id="2275" charges="100" lvl="200" maglv="9" exhaustion="1100" blocktype="solid" allowfaruse="1" event="script" value="customspells/magic prison.lua"/>
+	<rune name="Stealth" id="2314" charges="100" lvl="80" maglv="7" exhaustion="950" blocktype="solid" allowfaruse="1" event="script" value="customspells/invisible.lua"/>
+	<rune name="Drunkness" id="2263" charges="100" maglv="35" exhaustion="2000" blocktype="solid" needtarget="1" allowfaruse="1" event="script" value="customspells/drunk.lua"/>
+        
+	<!-- Custom Spells -->
+	<instant name="Apocalypse" words="exevo gran mas" lvl="300" manapercent="50" exhaustion="1000" needlearn="0" event="script" value="customspells/energy wave.lua">
+		<vocation id="0"/>
+
+	</instant>
+</mod>

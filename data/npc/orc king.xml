@@ -1,0 +1,8 @@
+<npc name="General Khaz" script="orcs.lua" walkinterval="0" floorchange="0" access="5" level="1" maglevel="1">
+	<health now="150" max="150"/>
+  <look type="2" head="78" body="0" legs="10" feet="10" addons="0"/>
+	<parameters>
+<parameter key="message_greet" value="Ola |PLAYERNAME|, Eu sou quem te promove. Para se promover diga: promover." />
+<parameter key="message_farewell" value="Boa sorte bravo aventureiro!" />
+	</parameters>
+</npc>

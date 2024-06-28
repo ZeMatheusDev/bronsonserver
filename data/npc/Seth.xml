@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Seth" script="loot.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="146" head="78" body="95" legs="56" feet="1" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+    <parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="Crystal Sword,7449,4000;Anduril,2390,200000;Bone Sword,2450,60;Bright Sword,2407,6000;Broad Sword,2413,300;Demonrage Sword,7382,50000;djinn blade,2451,7000;emerald sword,8930,15000;fire sword,2392,5000;giant sword,2393,25000;haunted blade,7407,18000;heavy machete,2441,950;katana,2412,120;longsword,2397,225;magic sword,2400,75000;narsil,6528,400000;pharaoh sword,2446,10000;scimitar,2419,265;serpent sword,2409,1500;spike sword,2383,700;sting,7404,2800;templar scytheblade,3963,450;two handed sword,2377,1200;warlord sword,2408,100000;wyvern fang,7408,2300"/>
+  <parameter key="shop_buyable" value="Crystal Sword,7449,8000;Bone Sword,2450,120;Bright Sword,2407,12000;Broad Sword,2413,600;djinn blade,2451,14000;emerald sword,8930,30000;fire sword,2392,10000;giant sword,2393,50000;haunted blade,7407,36000;katana,2412,240;longsword,2397,450;pharaoh sword,2446,20000;scimitar,2419,500;serpent sword,2409,3000;spike sword,2383,1400;sting,7404,5600;templar scytheblade,3963,900;two handed sword,2377,2400;wyvern fang,7408,4600"/>
+ </parameters>
+</npc>

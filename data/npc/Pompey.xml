@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Pompey" script="Pompey.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="150" head="58" body="19" legs="72" feet="71" addons="0"/>
+ <parameters>
+  <parameter key="module_shop" value="1"/>
+  <parameter key="message_greet" value="Ola. Como posso te ajudar |PLAYERNAME|?"/>
+  <parameter key="shop_sellable" value="aiglos,2425,130000;the buliza,8852,200000;legolas bow,8856,200000;crystal arrow,2352,1000;eaglehorn,8855,150000;elven bow,7438,10000;hunting spear,3965,1000;fire bug,5468,50000;warsing bow,8854,30000"/>
+  <parameter key="shop_buyable" value="spear,2389,300;hunting spear,3965,4000;throwing knives,2410,5;arrow,2544,1;flaming arrow,7840,4;flash arrow,7838,5;onyx arrow,7365,6;shiver arrow,7839,7;sniper arrow,7364,8;bow,2456,130;slingshot,5907,50"/>
+ </parameters>
+</npc>

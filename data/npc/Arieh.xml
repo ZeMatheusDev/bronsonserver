@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Arieh" script="default.lua" walkinterval="0" floorchange="0">
+ <health now="100" max="100"/>
+ <look type="143" head="0" body="75" legs="76" feet="76" addons="0"/>
+	<parameters>
+		<parameter key="module_shop" value="1"/>
+		<parameter key="message_greet" value="Olá. Como posso te ajudar |PLAYERNAME|?"/>
+		<parameter key="shop_buyable" value="brown backpack,1988,10;purple backpack,2001,10;green Backpack,1998,10;blue backpack,2002,10;golden backpack,2004,10;red backpack,2000,10;grey backpack,2003,10;beach backpack,5949,20;camouflage backpack,3940,20;pirate backpack,5926,20;fur backpack,7342,20;backpack of holding,2365,30;orange backpack,10519,50;demon backpack,10518,1000;moon backpack,10521,1000;crown backpack,10522,1000"/>
+ </parameters>
+</npc>
+

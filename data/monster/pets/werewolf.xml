@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Werewolf" nameDescription="a werewolf" experience="1450" speed="320" race="blood" manacost="0">
+	<health now="1955" max="1955"/>
+	<strategy attack="100" defense="0"/>
+	<targetchange speed="0" chance="8"/>
+	<look type="308" corpse="6080"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="1"/>
+		<flag pushable="1"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="100"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="59" attack="26"/>
+	</attacks>
+	<defenses armor="50" defense="55"/>
+	<elements>
+		<element physicalPercent="5"/>
+		<element energyPercent="15"/>
+		<element earthPercent="20"/>
+		<element firePercent="-10"/>
+		<element deathPercent="20"/>
+		<element icePercent="-10"/>
+		<element holyPercent="-10"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/> 
+	</immunities>
+</monster>

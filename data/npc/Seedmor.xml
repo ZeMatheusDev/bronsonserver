@@ -1,0 +1,9 @@
+<npc name="Runas" script="Seedmor.lua" access="5" lookdir="1">
+	<health now="150" max="150"/>
+	<look type="141" head="94" body="114" legs="94" feet="94" addons="3"/>
+	<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. eu vendo runas baratas." />
+		<parameter key="message_needmoremoney" value="Voce nao tem dinheiro suficiente." />
+		<parameter key="message_decline" value="Is |TOTALCOST| moedas de ouro demais para voce?" />
+	</parameters>
+</npc>
