@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The End" nameDescription="a The End" race="blood" experience="44000000" speed="900" manacost="0">
+	<health now="1500000" max="1500000"/>
+	<look type="354" head="13" body="94" legs="84" feet="98" corpse="6068"/>
+	<targetchange interval="5000" chance="75"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="0"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-3200" max="-7200"/>
+		<attack name="lifedrain" interval="2000" chance="83" range="1" min="-6000" max="-10603">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="80" range="7" min="-5101" max="-10444">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="physical" interval="1000" chance="91" range="7" min="-6120" max="-9300">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="1000" chance="85" range="7" radius="7" target="1" min="-6000" max="-9300">
+			<attribute key="shootEffect" value="fire"/>
+			<attribute key="areaEffect" value="firearea"/>
+		</attack>
+	</attacks>
+<defenses armor="70" defense="70">
+    <defense name="healing" interval="2000" chance="105" min="20005" max="40005">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="40"/>
+		<element earthPercent="40"/>
+		<element icePercent="40"/>
+		<element firePercent="-10"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="4000" chance="100">
+		<voice sentence="IS THE END!"/>
+	</voices>
+	<loot>
+		<item id="2152" countmax="100" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="2000"/><!-- strong health potion -->
+		<item id="7589" chance="2000"/><!-- strong mana potion -->
+		<item id="12288" chance="10000"/><!-- blood staff -->
+		<item id="12610" chance="12000"/><!-- blood sword -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2186" chance="6000"/><!-- moonlight rod -->
+				<item id="2640" chance="16200"/><!-- soft boots -->
+				<item id="2522" chance="15300"/><!-- great shield -->
+			</inside>
+		</item>
+	</loot>
+</monster>

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Horma" tp="1" nameDescription="a Horma" race="blood" experience="225000" speed="270" manacost="0">
+    <health now="50000" max="50000"/>
+  <look type="253" head="0" body="77" legs="77" feet="114" corpse="6080"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="70"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+    <attack name="melee" interval="2000" min="-1030" max="-1570"/>
+    <attack name="death" interval="1000" chance="12" length="8" spread="4" min="-1000" max="-1100">
+    <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="12" length="8" spread="4" min="-1000" max="-1100">
+    <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+    </attacks>
+  <defenses armor="10" defense="10">
+    <defense name="healing" interval="5000" chance="25" min="1000" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+   <elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="To me, creatures of the wild!"/>
+      <voice sentence="My instincts tell me about your cowardice."/>
+    </voices>
+
+    <loot>
+      <item id="2148" countmax="14" chance1="1" chancemax="0"/>
+      <item id="2686" countmax="2" chance1="1" chancemax="0"/>
+      <item id="2464" chance="1"/>
+      <item id="2401" chance="1"/>
+      <item id="2671" countmax="3" chance1="1" chancemax="0"/>
+      <item id="7343" chance="1"/>
+      <item id="7463" chance="1"/>
+      <item id="3965" chance="1"/>
+      <item id="7457" chance="1"/>
+      <item id="7379" chance="1"/>
+      <item id="7464" chance="1"/>
+    </loot>
+  </monster>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Chaos Draco" nameDescription="um Chaos Draco" race="undead" experience="5500" speed="300" manacost="0">
+  <health now="9350" max="9350"/>
+  <look type="231" corpse="6306"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="105" attack="105"/>
+      <attack name="fire" interval="1000" chance="15" length="8" spread="3" min="-310" max="-370">
+      <attribute key="areaEffect" value="firearea"/>
+      </attack>
+      <attack name="lifedrain" interval="1000" chance="15" length="7" spread="0" min="-300" max="-350">
+    <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+  </attacks>
+  <defenses armor="35" defense="30">
+  </defenses>
+	<elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="50"/>
+		<element deathPercent="55"/>
+		<element holyPercent="55"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Link Park Forever!"/>
+
+  </voices>
+	<loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="6500" chance="1818" countmax="1" /> 
+	<item id="5944" chance="1538" countmax="1" /> 
+	<item id="2547" chance="4000" countmax="15" /> 
+        <item id="2466" chance="100"/> 
+        <item id="2407" chance="3400"/>
+        <item id="2427" chance="1000"/> 
+        <item id="5741" chance="800"/> 
+	<item id="2495" chance="200"/> 
+	<item id="2516" chance="1000"/> 
+        <item id="5741" chance="1041"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Shade of Akama" nameDescription="um Shade of Akama" species="hard" race="blood" experience="30500" speed="390" manacost="490">
+    <health now="20035" max="20035"/>
+    <look type="145" head="60" body="114" legs="0" feet="114" corpse="6080"/>
+    <targetchange interval="6000" chance="10"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+    <attack name="melee" interval="2000" skill="135" attack="135"/>
+    <attack name="death" interval="1000" chance="15" range="7" target="1" min="-700" max="-860">
+    <attribute key="shootEffect" value="suddendeath"/>
+    <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="death" interval="3000" chance="30" range="10" radius="7" target="0" min="-600" max="-990">
+    <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="manadrain" interval="3000" chance="6" range="10" radius="9" target="0" min="-406" max="-532">
+    <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+    </attacks>
+    <defenses armor="24" defense="25"/>
+	<elements>
+	<element energyPercent="60"/>
+        <element physicalPercent="35"/>
+	<element earthPercent="60"/>
+	<element firePercent="30"/>
+	<element icePercent="55"/>
+	<element deathPercent="80"/>
+	<element holyPercent="60"/>
+  </elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+         <summons maxSummons="5">
+         <summon name="Spectre" interval="1000" chance="50" />
+        </summons>
+    <voices interval="10000" chance="5">
+      <voice sentence="help"/>
+      <voice sentence="to kil me?."/>
+    </voices>
+    <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+     <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="2123" chance="400"/> 
+        <item id="8889" chance="311"/> 
+        <item id="8865" chance="511"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

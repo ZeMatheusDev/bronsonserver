@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Frostfur" nameDescription="frostfur" race="blood" experience="1900000" speed="870">
+	<health now="350000" max="350000"/>
+	<look type="362" head="20" body="30" legs="40" feet="50" corpse="5527"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="250" attack="255" />
+    <attack name="ice" interval="2000" chance="65" range="7" min="-6300" max="-7605">
+      <attribute key="shootEffect" value="largerock"/>
+     </attack>
+	<attack name="ice" interval="6000" chance="60" range="7" radius="6" target="1" min="-6400" max="-8000">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="ice"/>
+    </attack>
+  </attacks>
+  <defenses armor="59" defense="68">
+    <defense name="healing" interval="8000" chance="65" min="2002" max="3008">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+          <element earthPercent="70"/>
+          <element physicalPercent="50"/>
+          <element energyPercent="20"/>
+          <element firePercent="20"/>
+          <element deathPercent="75"/>
+          <element holyPercent="30"/>
+     </elements>
+  <immunities>
+    <immunity ice="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="7000" chance="60">
+    <voice sentence="In name of Frostzera"/>
+    <voice sentence="I am the ice prince"/>
+  </voices>
+   <loot>
+   <item id="2148" countmax="82" chance1="100000" chancemax="0"/> 
+   <item id="2424" chance="850"/> 
+   <item id="2152" countmax="3" chance1="20000" chancemax="0"/>
+   <item id="2393" chance="30"/> 
+   <item id="5741" chance="30"/> 
+   <item id="7419" chance="30"/> 
+   <item id="2666" countmax="5" chance1="30000" chancemax="0"/> 
+   <item id="1987" chance="10"> 
+      <inside>
+         <item id="2463" chance="6666"/> 
+          <item id="7427" chance="1500"/> 
+     </inside>
+   </item>
+ </loot>
+</monster>

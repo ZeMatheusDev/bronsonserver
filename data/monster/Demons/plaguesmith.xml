@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="plaguesmith" nameDescription="a plaguesmith" race="venom" experience="6000" speed="300" manacost="0">
+  <health now="5500" max="5500"/>
+  <look type="247" corpse="6516"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="700"/>
+  </flags>
+  <attacks>
+	<attack name="melee" interval="2000" skill="100" attack="100"/>
+
+	<attack name="earth" interval="2000" chance="17" radius="4" target="0" min="-400" max="-500">
+		<attribute key="areaEffect" value="poison"/>
+	</attack>
+
+	<attack name="earth" interval="2000" chance="58" length="4" spread="3" min="-400" max="-500">
+		<attribute key="areaEffect" value="yellowbubble"/>
+	</attack>
+
+	<attack name="speed" interval="2000" chance="16" range="4" target="1" radius="4" speedchange="-700" duration="30000">
+		<attribute key="areaEffect" value="poison"/>
+	</attack>
+</attacks>
+  <defenses armor="55" defense="55">
+    <defense name="healing" interval="10" chance="7" min="100" max="100">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="2000" chance="30" speedchange="120" duration="7000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="50"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="3000" chance="30">
+    <voice sentence="You are looking a bit feverish today!"/>
+    <voice sentence="Hachoo!"/>
+    <voice sentence="Cough Cough!"/>
+  </voices>
+  <loot>
+	<item id="2148" chance1="100000" countmax="100" /> 
+	<item id="2148" chance1="100000" countmax="100" /> 
+	<item id="1987" chance="100000" >
+		<inside>
+			<item id="2444" chance="800" /> 
+			<item id="2515" chance="1200" /> 
+      <item id="2477" chance="1100" /> 
+			<item id="2489" chance="2000" /> 
+			<item id="2645" chance="600" /> 
+		</inside>
+	</item>
+  </loot>
+</monster>

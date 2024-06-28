@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Saruman" nameDescription="Saruman" race="venom" experience="350000" speed="500" manacost="0">
+  <health now="120000" max="120000"/>
+  <look type="229" head="20" body="30" legs="40" feet="50" corpse="6078"/>
+  <targetchange interval="2000" chance="10"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="2"/>
+    <flag staticattack="85"/>
+    <flag runonhealth="2500"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="135" attack="135"/>
+    <attack name="holy" interval="1000" chance="22" range="5" radius="2" target="1" min="-1900" max="-2600">
+		<attribute key="areaEffect" value="holyarea"/>
+		<attribute key="shootEffect" value="holy"/>
+    </attack>
+    <attack name="poison" interval="1000" chance="25" radius="7" target="0" min="-1800" max="-2600">
+      <attribute key="areaEffect" value="greenbubble"/>
+    </attack>
+    <attack name="energy" interval="1000" chance="30" radius="7" target="0" min="-1800" max="-2800">
+      <attribute key="areaEffect" value="yellowenergy"/>
+    </attack>
+    <attack name="holy" interval="1000" chance="30" length="6" spread="0" min="-1500" max="-2800">
+		<attribute key="areaEffect" value="holyarea"/>
+	</attack>
+        <attack name="manadrain" interval="1500" chance="30" radius="7" target="0" min="-2000" max="-2100">
+      <attribute key="areaEffect" value="yellowenergy"/>
+    </attack>
+  </attacks>
+  <defenses armor="30" defense="30">
+    <defense name="healing" interval="1000" chance="13" min="600" max="1400">
+		<attribute key="areaEffect" value="greenshimmer"/>
+    </defense>
+	<defense name="healing" interval="1000" chance="10" min="600" max="900">
+		<attribute key="areaEffect" value="greenshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="4" speedchange="360" duration="7000">
+		<attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="1000" chance="3" duration="4000">
+		<attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element firePercent="70"/>
+		<element earthPercent="55"/>
+		<element icePercent="80"/>
+		<element deathPercent="70"/>
+		<element energyPercent="80"/>
+	</elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity drunk="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity holy="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="3">
+  </summons>
+  <voices interval="5000" chance="20">
+    <voice sentence="NOONE WILL STOP ME THIS TIME!" yell="1"/>
+    <voice sentence="THE POWER IS MINE!" yell="1"/>
+    <voice sentence="I returned from death and you dream about defeating me?" yell="1"/>
+  </voices>
+<loot>
+ <item id="2152" countmax="36" chance1="100000" chancemax="0"/>
+        <item id="2160" countmax="30" chance1="10000" chancemax="0"/>
+        <item id="2425" chance="101"/> 
+        <item id="6528" chance="501"/>
+        <item id="7424" chance="601"/> 
+        <item id="7414" chance="401"/> 
+        <item id="8855" chance="401"/> 
+        <item id="8924" chance="301"/> 
+        <item id="7410" chance="201"/> 
+        <item id="8852" chance="401"/> 
+ 	<item id="2152" countmax="87" chance1="100000" chancemax="0"/>
+        <item id="2152" countmax="17" chance1="100000" chancemax="0"/>
+        <item id="2152" countmax="69" chance1="100000" chancemax="0"/>
+        <item id="2152" countmax="25" chance1="100000" chancemax="0"/>
+        <item id="2152" countmax="54" chance1="100000" chancemax="0"/>
+ 	<item id="2091" chance="400"/>
+</loot>
+</monster>

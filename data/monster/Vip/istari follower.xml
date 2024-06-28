@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="stari follower" nameDescription="um stari follower" race="blood" experience="20500" speed="370" manacost="0">
+	<health now="15225" max="15225"/>
+	<look type="309" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="60" attack="55"/>
+                <attack name="fire" interval="1000" chance="22" range="5" radius="2" target="1" min="-400" max="-590">
+                <attribute key="shootEffect" value="FLAMMINGARROW"/>
+                <attribute key="areaEffect" value="EXPLOSIONAREA"/>
+                </attack>
+		<attack name="physical" interval="1000" chance="20" range="7" min="-200" max="-590">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+                </attack>
+		<attack name="manadrain" interval="3000" chance="30" range="7" min="-300" max="-640">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+                <attack name="lifedrain" interval="1000" chance="12" length="8" spread="0" min="-400" max="-567">
+		<attribute key="areaEffect" value="energy"/>
+	        </attack>
+		<attack name="speed" interval="1000" chance="10" range="7" speedchange="-600" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="13" defense="26">
+		<defense name="healing" interval="2000" chance="30" min="0" max="1">
+			<attribute key="areaEffect" value="energy"/>
+		</defense>
+	</defenses>
+	  <elements>
+  <element icePercent="90"/>
+  <element earthPercent="60"/>
+  <element physicalPercent="9"/>
+  <element holyPercent="90"/>
+  <element deathPercent="60"/>
+  <element firePercent="90"/>
+  <element energyPercent="80"/>
+  </elements>
+	<immunities>
+                <immunity paralyze="1"/>
+		<immunity invisible="0"/>
+	</immunities>
+        <summons maxSummons="1">
+         <summon name="stone golem" interval="1000" chance="10" />
+        </summons>
+	<voices interval="5000" chance="10">
+		<voice sentence="You have disturbed my thoughts!"/>
+		<voice sentence="Let me turn you into something more useful!"/>
+		<voice sentence="Let me taste your brain!"/>
+		<voice sentence="You will be punished!"/>
+	</voices>
+	<loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="3972" chance="3444" /> 
+    <item id="2348" chance="1"/> 
+	    <item id="2518" chance="3400"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/>
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/>
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="2436" chance="2011"/> 
+        <item id="2656" chance="1000"/> 
+        <item id="8879" chance="500"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

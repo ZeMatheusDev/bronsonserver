@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Dragon Priest" nameDescription="um lizard dragon priest" race="blood" experience="6200" speed="320" manacost="0">
+<health now="6450" max="6450"/>
+<look type="339" corpse="11271"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="3"/>
+<flag staticattack="90"/>
+<flag runonhealth="50"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" skill="105" attack="137"/>
+<attack name="fire" interval="1000" chance="30" length="8" spread="3" min="-400" max="-450">
+<attribute key="areaEffect" value="fireattack"/>
+</attack>
+<attack name="earth" interval="1000" chance="15" radius="5" target="0" min="-400" max="-500">
+<attribute key="areaEffect" value="poison"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="1000" chance="18" min="200" max="400">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+<defense name="invisible" interval="15000" chance="1" duration="4000">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element energyPercent="55"/>
+<element earthPercent="80"/>
+<element icePercent="50"/>
+<element firePercent="80"/>
+<element holyPercent="55"/>
+</elements>
+<immunities>
+<immunity death="1"/>
+<immunity invisible="1"/>
+<immunity paralyze="1"/>
+</immunities>
+<loot>
+<item id="2148" countmax="137" chance="10000"/>
+<item id="7887" chance="1001"/>
+<item id="2518" chance="1500"/>
+<item id="2498" chance="1000"/>
+<item id="5876" countmax="1" chance="8"/>
+<item id="1987" chance="100000">
+<inside>
+<item id="8882" chance="200"/>
+<item id="2469" chance="333"/>
+<item id="3982" chance="633"/>
+
+</inside>
+</item>
+</loot>
+</monster>

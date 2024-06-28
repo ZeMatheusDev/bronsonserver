@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Mancubus" nameDescription="um Mancubus" race="undead" experience="4200" speed="310" manacost="0">
+  <health now="9000" max="9000"/>
+  <look type="55" head="0" body="0" legs="0" feet="0" corpse="5999"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="80"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="135" attack="135"/>
+    <attack name="physical" interval="1000" chance="30" range="7" radius="4" target="1" min="-300" max="-450">
+		<attribute key="shootEffect" value="largerock"/>
+		<attribute key="areaEffect" value="groundshaker"/>
+    </attack>
+  </attacks>
+  <defenses armor="70" defense="70">
+    <defense name="speed" interval="2000" chance="12" speedchange="480" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="50"/>
+		<element earthPercent="80"/>
+		<element icePercent="45"/>
+		<element firePercent="20"/>
+		<element deathPercent="60"/>
+                <element holyPercent="75"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="HUAHAHA" yell="1"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="2494" chance="200"/> 
+        <item id="2476" chance="800"/> 
+        <item id="2475" chance="850"/>
+        <item id="2393" chance="900"/> 
+        <item id="2496" chance="550"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

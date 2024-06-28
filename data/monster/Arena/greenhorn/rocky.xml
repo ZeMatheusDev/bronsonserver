@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Forky" nameDescription="forky" race="undead" experience="70000" speed="650">
+	<health now="85000" max="85000"/>
+	<look type="360" head="20" body="30" legs="40" feet="50" corpse="5527"/>
+	<targetchange interval="2000" chance="5"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-1045" max="-1650"/>
+    <attack name="death" interval="3000" chance="70" radius="3" target="0" min="-1100" max="-2090">
+		<attribute key="areaEffect" value="smallclouds"/>
+	</attack>
+    <attack name="earth" interval="2000" chance="70" range="3" min="-1025" max="-1205">
+		<attribute key="shootEffect" value="poison"/>
+		<attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="fire" interval="2000" chance="70" range="7" radius="1" target="1" min="-1050" max="-1450">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="fire"/>
+    </attack>
+
+  </attacks>
+  <defenses armor="85" defense="75">
+    <defense name="healing" interval="4000" chance="40" min="2005" max="4025">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="-5"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="I can see you decaying!"/>
+    <voice sentence="Let me taste your mortality!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="20" chance="100000"/>
+    <item id="2694" countmax="3" chance="5000"/>
+    <item id="2050" chance="100"/>
+    <item id="2230" chance="16"/>
+    <item id="2260" chance="22"/>
+    <item id="5902" chance="110"/>
+ 	<item id="1987" chance="100">
+ 	<inside>
+    <item id="2386" chance="2000"/>
+    <item id="2649" chance="2500"/>
+    <item id="6500" countmax="2" chance="2222"/>
+    <item id="5944" chance="1667" countmax="1" /> 
+    <item id="2436" chance="1399" /> 
+    <item id="2550" chance="5000" /> 
+    <item id="7884" chance="1100" />
+    <item id="7885" chance="1400" /> 
+ 	</inside>
+ 	</item>
+ </loot>
+</monster>

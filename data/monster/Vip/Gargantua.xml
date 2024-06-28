@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gargantua" nameDescription="Gargantua" race="blood" experience="0" speed="320" manacost="0">
+<health now="104150" max="104150"/>
+<look type="334" corpse="11310"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="1000" skill="130" attack="130"/>
+<attack name="fire" interval="1000" chance="25" range="7" radius="4" target="1" max="-1080">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="fire" interval="1000" chance="30" length="8" spread="3" min="-850" max="-1350">
+<attribute key="areaEffect" value="fireattack"/>
+</attack>
+<attack name="lifedrain" interval="1000" chance="34" radius="2" target="1" min="-900" max="-1399">
+<attribute key="shootEffect" value="whirlwindaxe"/>
+<attribute key="areaEffect" value="redspark"/>
+</attack>
+<attack name="outfit" interval="1000" chance="15" range="7" monster="deer" duration="5200">
+<attribute key="areaEffect" value="SMOKE"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="4000" chance="20" max="1000">
+<attribute key="areaEffect" value="HEARTS"/>
+</defense>
+</defenses>
+<elements>
+<element physicalPercent="30"/>
+<element holyPercent="80"/>
+<element deathPercent="90"/>
+<element energyPercent="60"/>
+<element icePercent="50"/>
+<element earthPercent="80"/>
+<element firePercent="80"/>
+<element physicalPercent="55"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity fire="0"/>
+<immunity invisibility="1"/>
+</immunities>
+<loot>
+<item id="2086" countmax="1" chance="25000"/><!-- purple key -->
+</loot>
+</monster>

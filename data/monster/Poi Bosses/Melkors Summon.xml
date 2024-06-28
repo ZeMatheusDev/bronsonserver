@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Melkors Summon" nameDescription="Melkors Summon" race="blood" experience="800000" speed="390" manacost="0">
+  <health now="130500" max="130700"/>
+  <look type="244" corpse="6336"/>
+  <targetchange interval="10000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="130" attack="130"/>
+    <attack name="physical" interval="1000" chance="20" range="7" min="-1080" max="-1260">
+      <attribute key="shootEffect" value="largerock"/>
+    </attack>
+    <attack name="physical" interval="2500" chance="30" range="7" radius="5" target="1" min="-1150" max="-1250">
+		<attribute key="shootEffect" value="largerock"/>
+		<attribute key="areaEffect" value="groundshaker"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="30" range="3" min="-1000" max="-1100">
+			<attribute key="areaEffect" value="stun"/>
+		</attack>
+  </attacks>
+  <defenses armor="60" defense="60">
+    <defense name="speed" interval="1000" chance="12" speedchange="440" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>
+                <element deathPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <summons maxSummons="0">
+    <summon name="juggernaut" interval="10500" chance="30"/>
+  </summons>
+  <voices interval="5000" chance="10"/>
+  <loot>
+        <item id="2160" countmax="20" chance1="10000" chancemax="0"/>
+        <item id="11296" chance="501" />
+	<item id="9777" chance="201"/> 
+        <item id="8886" chance="501"/> 
+	<item id="2152" chance1="70000" countmax="90" /> 
+	<item id="2666" chance1="4" countmax="8" /> 
+	<item id="2393" chance="2000" /> 
+	<item id="6500" chance="9" countmax="1" />
+	<item id="11297" chance="1000" >
+		<inside>
+			<item id="11296" chance="701" />
+			<item id="9777" chance="201"/> 
+                        <item id="8886" chance="501"/> 
+
+		</inside>
+	</item>
+  </loot>
+</monster>

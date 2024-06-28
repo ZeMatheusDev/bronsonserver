@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Illidan Stormrage" nameDescription="Illidan Stormrage" race="fire" experience="11000000" speed="559" manacost="0">
+  <health now="910000" max="910000"/>
+  <look type="12" head="38" body="114" legs="0" feet="94" corpse="6068"/>
+  <targetchange interval="5000" chance="40"/>
+  <strategy attack="65" defense="5"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="210" attack="380"/>
+    <attack name="manadrain" interval="3000" chance="80" range="10" radius="9" target="0" min="-5556" max="-8032">
+      <attribute key="areaEffect" value="greenshimmer"/>
+     </attack>
+    <attack name="fire" interval="4000" chance="80" range="10" radius="7" target="0" min="-4900" max="-6500">
+      <attribute key="areaEffect" value="firearea"/>
+     </attack>
+    <attack name="death" interval="3000" chance="80" range="10" radius="7" target="0" min="-4100" max="-6000">
+      <attribute key="areaEffect" value="mortarea"/>
+   </attack>
+    <attack name="speed" interval="3000" chance="85" range="10" target="7" speedchange="-3000" duration="5000">
+		<attribute key="shootEffect" value="fire"/>
+		<attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+      <attack name="fire" interval="4000" chance="66" range="10" radius="1" target="1" min="-3055" max="-4155">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="80" defense="175">
+    <defense name="healing" interval="5000" chance="60" min="40000" max="60000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="2000" chance="50" speedchange="480" duration="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="70"/>
+		<element earthPercent="70"/>
+		<element icePercent="50"/>
+		<element firePercent="70"/>
+		<element holyPercent="70"/>
+                <element deathPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="10000" chance="10">
+    <voice sentence="Tenta nao"/>
+  </voices>
+  <loot capacity="5000">
+    <item id="8886" chance="7000"/>
+    <item id="2160" countmax="60" chance1="10000" chancemax="0"/>
+    <item id="2470" chance="5400"/>
+    <item id="2646" chance="5000"/>
+    <item id="2471" chance="5300"/>
+    <item id="8906" chance="4600"/>
+  </loot>
+</monster>

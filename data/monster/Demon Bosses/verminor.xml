@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nefrarian" nameDescription="Nefrarian" race="blood" experience="250000" speed="310" manacost="0">
+  <health now="110500" max="110500"/>
+  <look type="240" corpse="6332"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="108" attack="120"/>
+    <attack name="energy" interval="1500" chance="300" length="8" spread="3" min="-1000" max="-2000">
+      <attribute key="areaEffect" value="bluebubble"/>
+    </attack>
+    <attack name="poison" interval="1000" chance="150" length="8" spread="3" min="-1000" max="-2000">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="physical" interval="1000" chance="25" range="7" min="-1505" max="-3035">
+      <attribute key="shootEffect" value="suddendeath"/>
+    </attack>
+<attack name="poison" interval="1000" chance="20" range="7" radius="6" target="0" min="-335" max="-955">
+  <attribute key="areaEffect" value="bluebubble"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="35">
+
+  </defenses>
+  <elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>>
+	</elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity death="1"/>
+    <immunity invisible="1"/>
+    <immunity paralyze="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Wooof!"/>
+    </voices>
+  <loot>
+   <item id="2152" countmax="50" chance1="100000" chancemax="0"/> --Gold Coin
+   <item id="5944" chance="5555"/> --Soul Orb
+   <item id="6570" chance="1" countmax="4" /> --Blue Surprise Bag
+   <item id="2173" chance="70538" /> --aol
+   <item id="2671" countmax="8" chance1="1" chancemax="0"/> --Ham
+   <item id="2230" chance="25000"/> --red gem
+   <item id="6500" chance="72000"/> --Demonic Essence
+   <item id="2365" chance="50000">
+ 	<inside>
+               <item id="7388" chance="4001"/> --vl
+                <item id="8906" chance="2500"/> --Cerberus shield 
+                <item id="7382" chance="4000"/> --ds
+    </inside>
+ 	</item>
+ </loot>
+</monster>

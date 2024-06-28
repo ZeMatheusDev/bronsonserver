@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Bloodboil" nameDescription="um Bloodboil" species="hard" race="blood" experience="19500" speed="390" manacost="490">
+    <health now="20035" max="20035"/>
+    <look type="130" head="58" body="59" legs="109" feet="79" corpse="6080"/>
+    <targetchange interval="6000" chance="10"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="5"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+    <attack name="melee" interval="1000" skill="125" attack="100"/>
+    <attack name="physical" interval="1000" chance="50" range="7" min="-600" max="-745">
+      <attribute key="shootEffect" value="arrow"/>
+      <attribute key="areaEffect" value="holyarea"/>
+    </attack>
+    <attack name="holy" interval="1000" chance="50" range="5" radius="2" target="1" min="-600" max="-790">
+    <attribute key="areaEffect" value="holyarea"/>
+    <attribute key="shootEffect" value="holy"/>
+    </attack>
+    <attack name="manadrain" interval="3000" chance="6" range="10" radius="9" target="0" min="-456" max="-792">
+    <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+    </attacks>
+    <defenses armor="24" defense="25"/>
+	<elements>
+	<element energyPercent="60"/>
+        <element physicalPercent="35"/>
+	<element earthPercent="60"/>
+	<element firePercent="30"/>
+	<element icePercent="55"/>
+	<element deathPercent="80"/>
+	<element holyPercent="60"/>
+  </elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+        <summons maxSummons="5">
+        <summon name="Hellfire Fighter" interval="1000" chance="50" />
+        </summons>
+    <voices interval="10000" chance="5">
+      <voice sentence="help"/>
+      <voice sentence="to kil me?."/>
+    </voices>
+    <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+     <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="2474" chance="400"/> 
+        <item id="8885" chance="1"/> 
+        <item id="7894" chance="1000"/> 
+        <item id="2656" chance="1100"/>
+        <item id="2432" chance="1200"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

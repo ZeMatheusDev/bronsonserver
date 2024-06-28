@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="elf soldier" nameDescription="a elf soldier" race="blood" experience="20" speed="220" manacost="320">
+  <health now="900" max="900"/>
+  <look type="62" head="25" body="35" legs="42" feet="52" corpse="6003"/>
+  <targetchange interval="2000" chance="0"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="1"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="20" attack="65"/>
+    <attack name="physical" interval="1000" chance="5" range="7" min="-205" max="-215">
+      <attribute key="shootEffect" value="arrow"/>
+    </attack>
+  </attacks>
+  <defenses armor="6" defense="12"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Ulathil beia Thratha!"/>
+    <voice sentence="Bahaha aka!"/>
+    <voice sentence="You are not welcome here."/>
+    <voice sentence="Flee as long as you can."/>
+    <voice sentence="Death to the defilers!"/>
+  </voices>
+  <loot>
+    <item id="2505" chance="500"/>
+    <item id="2507" chance="501"/>
+    <item id="3969" chance="600"/>
+    <item id="2173" chance="288"/>
+    <item id="2533" chance="502"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="50" chance1="80000" chancemax="0"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

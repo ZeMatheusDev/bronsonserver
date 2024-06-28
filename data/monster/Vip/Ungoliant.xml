@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ungoliant" nameDescription="Ungoliant" race="VENOM" experience="80000" speed="300" manacost="0">
+  <health now="60000" max="60000"/>
+  <look type="38" head="0" body="0" legs="0" feet="0" corpse="5977"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" min="-1030" max="-1300" poison="100"/>
+    <attack name="poison" interval="1000" chance="12" range="7" min="-515" max="-835">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="lifedrain" interval="1000" chance="34" length="7" spread="0" min="-400" max="-599">
+    <attribute key="areaEffect" value="greenbubble"/>
+    </attack>
+  </attacks>
+  <defenses armor="30" defense="30">
+    <defense name="speed" interval="1000" chance="6" speedchange="290" duration="20000"/>
+  </defenses>
+  <elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="20"/>
+		<element holyPercent="55"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <summons maxSummons="4">
+    <summon name="laracna" interval="1000" chance="20" max="4"/>
+  </summons>
+  <loot>
+    <item id="2152" countmax="70" chance1="100000" chancemax="0"/> 
+    <item id="2493" chance="1" /> 
+    <item id="2348" chance="1"/> 
+	    <item id="2536" chance="1400"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2152" countmax="50" chance1="100000" chancemax="1"/>
+        <item id="2152" countmax="20" chance1="5000" chancemax="0"/> 
+        <item id="8880" chance="500"/>
+        <item id="8882" chance="511"/> 
+        <item id="2195" chance="1000"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

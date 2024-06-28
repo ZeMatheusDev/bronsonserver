@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lord of the Elements" nameDescription="Lord of the Elements" race="blood" experience="550000" speed="350" manacost="0">
+  <health now="150000" max="150000"/>
+<look type="242" corpse="8966"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="3"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" min="-1200" max="-1580"/>
+
+    <attack name="ice" interval="1000" chance="30" radius="8" target="0" min="-2000" max="5100">
+      <attribute key="areaEffect" value="GIANTICE"/>
+    </attack>
+<attack name="fire" interval="2500" chance="30" length="8" spread="3" min="-2050" max="-5150">
+			<attribute key="areaEffect" value="fireattack"/>
+    </attack>
+    <attack name="poison" interval="1500" chance="40" radius="7" target="0" min="-1000" max="-5100">
+      <attribute key="areaEffect" value="greenbubble"/>
+    </attack>
+	<attack name="energy" interval="1200" chance="40" radius="3" target="1" min="-2000" max="-6099">
+           <attribute key="shootEffect" value="energy"/>
+           <attribute key="areaEffect" value="yellowenergy"/>
+    </attack>
+    <attack name="manadrain" interval="1000" chance="30" radius="3" target="1" min="-3000" max="-6599">
+           <attribute key="shootEffect" value="energy"/>
+           <attribute key="areaEffect" value="yellowenergy"/>
+    </attack>
+    <attack name="ice" interval="1600" chance="30" range="7" min="-1000" max="3200">
+    <attribute key="areaEffect" value="ICETORNADO"/>
+    </attack>
+  </attacks>
+  <defenses armor="17" defense="23">
+    <defense name="outfit" interval="5000" chance="60" monster="defiler" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="60" monster="ice golem" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="2000" chance="60" monster="spirit of fire" duration="1000000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="10000" chance="30" duration="1000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="80"/>
+		<element earthPercent="80"/>
+		<element icePercent="80"/>
+		<element firePercent="80"/>
+		<element holyPercent="80"/>
+                <element deathPercent="70"/>
+                <element physicalPercent="70"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+	<loot>
+		<item id="11237" chance="100000"> <!-- bp -->
+			<inside>
+		<item id="2123" chance="5101"/> <!-- rots -->
+                <item id="8887" chance="5700"/> <!-- rots -->
+		<item id="2091" chance="4000"/> <!-- gkey -->
+		<item id="2646" chance="401"/> <!-- golden boots -->
+		<item id="8889" chance1="501"/> <!-- Khel Thuzads Skin -->
+		<item id="2523" chance="301"/> <!-- blessed shield -->
+		<item id="11296" chance="601"/> <!-- zenit helmet -->
+		<item id="11298" chance="601"/> <!-- Zenit Legs -->
+		<item id="11295" chance="601"/> <!-- Zenit cuirass -->
+		<item id="8907" chance="301"/> <!-- permafrost shield -->
+			</inside>
+		</item>
+	</loot>
+</monster>

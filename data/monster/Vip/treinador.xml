@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="treinador" nameDescription="a treinador" race="undead" experience="0" speed="0" manacost="0">
+  <health now="3900000" max="3900000"/>
+  <look type="131" head="95" body="95" legs="95" feet="95" addons="0"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="3000" min="-10" max="-20"/>
+	<attack name="melee" interval="3000" min="-20" max="-30"/>
+  </attacks>
+  <defenses armor="0" defense="0">
+    <defense name="healing" interval="2500" chance="50" min="20000" max="20000">
+      <attribute key="areaEffect" value="poff"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="100"/>
+		<element earthPercent="100"/>
+		<element icePercent="100"/>
+		<element holyPercent="100"/>
+		<element deathPercent="100"/>
+    <element firePercent="100"/>
+	</elements>
+  <immunities>
+    <immunity drown="0"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+    <immunity physical="0"/>
+  </immunities>
+  <summons maxSummons="2">
+  </summons>
+  <voices interval="5000" chance="10">
+  </voices>
+  <loot>
+</loot>
+</monster>

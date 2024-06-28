@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Olog-hai" nameDescription="Olog-hai" race="undead" experience="35000" speed="200" manacost="0">
+  <health now="35000" max="35000"/>
+  <look type="55" head="0" body="0" legs="0" feet="0" corpse="5999"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="80"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="140" attack="100"/>
+    <attack name="physical" interval="1000" chance="30" range="7" radius="5" target="1" min="-550" max="-650">
+		<attribute key="shootEffect" value="largerock"/>
+		<attribute key="areaEffect" value="groundshaker"/>
+    </attack>
+  </attacks>
+  <defenses armor="40" defense="45">
+    <defense name="speed" interval="1000" chance="7" speedchange="550" duration="4000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element energyPercent="50"/>
+		<element earthPercent="80"/>
+		<element icePercent="45"/>
+		<element firePercent="20"/>
+		<element holyPercent="60"/>
+                <element deathPercent="60"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="HUAHAHA" yell="1"/>
+  </voices>
+  <loot>
+    <item id="2160" countmax="3" chance1="10000" chancemax="0"/>
+    <item id="2671" countmax="3" chance="10000"/>
+    <item id="2174" countmax="1" chance="800"/>
+    <item id="2496" chance="501"/>
+    <item id="2528" chance="1001"/>
+    <item id="2393" chance="1408"/>
+    <item id="3968" chance="1001"/>
+    <item id="2150" countmax="2" chance="4000"/>
+    <item id="2365" chance="100000">
+      <inside>
+        <item id="2666" countmax="6" chance="40000"/>
+        <item id="2148" countmax="40" chance="100000"/>
+        <item id="2645" chance="1801"/>
+        <item id="2391" chance="1901"/>
+        <item id="2645" chance="1533"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

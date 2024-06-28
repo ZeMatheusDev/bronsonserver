@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Achilles" nameDescription="Achilles" race="fire" experience="20600000" speed="870" manacost="0">
+  <health now="550550" max="550550"/>
+  <look type="134" head="38" body="132" feet="132" legs="114" corpse="6068" addons="3"/>
+  <targetchange interval="5000" chance="70"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="78"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" min="-4045" max="-6050"/>
+		<attack name="physical" interval="1000" chance="80" range="8" radius="2" target="1" min="-5200" max="-5500">
+			<attribute key="shootEffect" value="spear"/>
+                 </attack>
+		<attack name="melee" interval="3000" chance="100" range="7" radius="3" target="0" min="-3280" max="-5355">
+                <attribute key="areaEffect" value="blackspark"/>
+		</attack>
+	</attacks>
+	<defenses armor="70" defense="70">
+    <defense name="healing" interval="4000" chance="70" min="6002" max="10008">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+         <elements>
+		<element energyPercent="90"/>
+		<element earthPercent="90"/>
+		<element icePercent="55"/>
+		<element firePercent="90"/>
+		<element holyPercent="90"/>
+                <element deathPercent="85"/>
+                <element physicalPercent="85"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+        <loot>
+                        <item id="11296" chance="800"/><!-- Zenit helmet -->
+                        <item id="9776" chance="500"/><!-- Divine Cuirass -->
+                        <item id="9777" chance="500"/><!-- Valar kilt -->
+                        <item id="9932" chance="100"/><!-- firewalker boots -->
+                        <item id="2425" chance="1200"/><!-- aiglos -->
+                        <item id="8906" chance="700"/><!-- cerberus shield -->
+                        <item id="6528" chance="800"/><!-- narsil -->
+	</loot>
+</monster>

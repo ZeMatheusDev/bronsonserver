@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Nygard" nameDescription="Nygard" race="blood" experience="300000" speed="205" manacost="590">
+  <health now="70000" max="70000"/>
+  <look type="253" head="114" body="132" legs="132" feet="132" corpse="6080"/>
+  <targetchange interval="2000" chance="5"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="1"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="80"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-1030" max="-1070"/>
+    <attack name="death" interval="1000" chance="12" length="8" spread="4" min="-1500" max="-1800">
+    <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="12" length="8" spread="4" min="-1400" max="-1500">
+    <attribute key="areaEffect" value="purplenote"/>
+    </attack>
+    <attack name="death" interval="1000" chance="30" range="10" radius="7" target="0" min="-2000" max="-2100">
+      <attribute key="areaEffect" value="mortarea"/>
+   </attack>
+    </attacks>
+  <defenses armor="10" defense="10">
+    <defense name="healing" interval="4000" chance="25" min="1000" max="1000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+   <elements>
+		<element firePercent="80"/>
+		<element earthPercent="80"/>
+		<element icePercent="80"/>
+		<element deathPercent="80"/>
+		<element energyPercent="80"/>
+		<element holyPercent="70"/>
+	</elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="To me, creatures of the wild!"/>
+      <voice sentence="My instincts tell me about your cowardice."/>
+    </voices>
+
+    <loot>
+      <item id="2148" countmax="14" chance1="33333" chancemax="0"/>
+      <item id="2686" countmax="2" chance1="10000" chancemax="0"/>
+      <item id="2464" chance="3333"/>
+      <item id="2401" chance="10000"/>
+      <item id="2671" countmax="3" chance1="2500" chancemax="0"/>
+      <item id="7343" chance="3333"/>
+      <item id="7463" chance="1033"/>
+      <item id="2474" chance="8533"/>
+      <item id="2523" chance="2330"/>
+      <item id="8887" chance="1533"/>
+      <item id="2454" chance="20000"/>
+    </loot>
+  </monster>

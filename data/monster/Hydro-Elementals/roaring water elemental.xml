@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Master Killer" nameDescription="a Master Killer" race="undead" experience="35000" species="ice" speed="550" manacost="0">
+    <health now="45000" max="45000"/>
+    <look type="11" corpse="8965"/>
+    <targetchange interval="20000" chance="35"/>
+    <strategy attack="2500" defense="0"/>
+    <flags>
+      <flag summonable="0"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="0"/>
+      <flag convinceable="0"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="85"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="1"/>
+    </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="120" attack="230"/>
+<attack name="ice" interval="4000" chance="50" radius="2" target="1" min="-1540" max="-2220">
+  <attribute key="areaEffect" value="bluebubble"/>
+  <attribute key="shootEffect" value="ice"/>
+  </attack>
+</attacks>
+    <defenses armor="30" defense="30">
+    <defense name="healing" interval="2000" chance="25" min="800" max="1050">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+		<element physicalPercent="50"/>
+		<element icePercent="70"/>
+</elements>
+  <immunities>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <loot>
+  <loot id="8889" countmax="3" chance1="6200" chancemax="0"/> 
+  <loot id="2146" countmax="2" chance1="2400" chancemax="0"/> 
+  <loot id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+  </loot>
+  </monster>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lizard Zaogun" nameDescription="um lizard zaogun" race="blood" experience="5800" speed="420" manacost="0">
+<health now="15955" max="15955"/>
+<look type="343" corpse="11278"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="150"/>
+</flags>
+<attacks>
+<attack name="melee" interval="1000" skill="115" attack="120"/>
+<attack name="lifedrain" interval="1000" chance="30" range="3" min="-300" max="-490">
+<attribute key="areaEffect" value="stones"/>
+</attack> 
+<attack name="lifedrain" interval="1000" chance="30" range="3" min="-300" max="-490">
+<attribute key="areaEffect" value="stun"/>
+</attack> 
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="2000" chance="20" max="100">
+<attribute key="areaEffect" value="blueshimmer"/>
+</defense>
+</defenses>
+<elements>
+<element energyPercent="55"/>
+<element earthPercent="80"/>
+<element icePercent="55"/>
+<element firePercent="20"/>
+<element holyPercent="55"/>
+</elements>
+<immunities>
+<immunity death="1"/>
+<immunity invisible="1"/>
+<immunity paralyze="1"/>
+</immunities>
+<voices interval="5000" chance="10">
+<voice sentence="Grzzzzzzz!"/>
+</voices>
+<loot>
+<item id="2148" countmax="90" chance="25000"/><!-- gold coin -->
+<item id="2148" countmax="70" chance="25000"/><!-- gold coin -->
+<item id="2148" countmax="64" chance="25000"/><!-- gold coin -->
+<item id="2497" chance="1100"/><!-- crusader helmet -->
+<item id="2476" chance="1200"/><!-- k armor -->
+<item id="2469" chance="600"/><!-- dsl -->
+<item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="7886" chance="900"/><!-- terra boots -->
+<item id="5876" chance="1"/><!-- lizard leather -->
+<item id="5881" chance="1"/><!-- lizard scale -->
+<item id="11302" chance="400"/><!-- drachaku -->
+<item id="11296" chance="1"/><!-- zaoan helmet -->
+</inside>
+</item>
+</loot>
+</monster>

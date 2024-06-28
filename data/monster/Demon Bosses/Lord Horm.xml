@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lord horm" nameDescription="a Lord horm" race="blood" experience="80000" speed="2200" manacost="0">
+	<health now="42000" max="42000"/>
+	<look type="287" corpse="9660"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="230" attack="210"/>
+    <attack name="death" interval="1000" chance="8" radius="9" target="0" min="-800" max="-1900">
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="speed" interval="1000" chance="12" radius="6" target="0" speedchange="-850" duration="60000">
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="strength" interval="1000" chance="10" radius="5" target="0" min="-600" max="-2450">
+      <attribute key="areaEffect" value="blackspark"/>
+    </attack>
+    <attack name="fire" interval="3000" chance="13" range="7" radius="7" target="1" min="-300" max="-2800">
+      <attribute key="shootEffect" value="fire"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="manadrain" interval="3000" chance="8" radius="10" target="0" min="-600" max="-2700">
+      <attribute key="areaEffect" value="energyarea"/>
+    </attack>
+    <attack name="energy" interval="2000" chance="9" length="8" spread="0" min="-400" max="-2800">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="poisoncondition" interval="5000" chance="18" length="0" spread="0" min="-800" max="-3000">
+      <attribute key="areaEffect" value="greenspark"/>
+    </attack>
+    <attack name="lifedrain" interval="2000" chance="6" radius="14" target="0" min="-600" max="-2200">
+      <attribute key="areaEffect" value="greenshimmer"/>
+    </attack>
+  </attacks>
+	<defenses armor="17" defense="23"/>
+		<defenses name="healing" interval="100" chance="25" min="420" max="680">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defenses>
+	<elements>
+		<element energyPercent="10"/>
+		<element earthPercent="80"/>
+		<element icePercent="15"/>
+		<element firePercent="-10"/>
+		<element holyPercent="-25"/>
+	</elements>
+	<immunities>
+		<immunity death="0"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="4000" chance="100">
+		<voice sentence="Smeellll!"/>
+	</voices>
+	<loot>
+		<item id="2148" countmax="84" chance="100000"/><!-- gold coin -->
+		<item id="7588" chance="8000"/><!-- strong health potion -->
+		<item id="7589" chance="8000"/><!-- strong mana potion -->
+		<item id="2145" chance="6000"/><!-- small diamond -->
+		<item id="2127" chance="5000"/><!-- esmerald blange -->
+		<item id="1987" chance="100000"><!-- bag -->
+			<inside>
+				<item id="2186" chance="2000"/><!-- moonlight rod -->
+				<item id="9837" chance="2000"/><!-- velvet tapestry -->
+				<item id="5670" chance="1200"/><!-- voodo skull -->
+				<item id="9808" chance="1200"/><!-- rusty armor -->
+				<item id="2195" chance="300"/><!-- boots of haste -->
+			</inside>
+		</item>
+	</loot>
+</monster>

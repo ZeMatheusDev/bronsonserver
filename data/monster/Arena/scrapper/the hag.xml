@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="The Hag" nameDescription="the hag" race="blood" experience="6000000" speed="705">
+	 <health now="600000" max="600000"/>
+  <look type="356" head="59" body="21" legs="128" feet="38" addons="3" corpse="5527"/>
+  <targetchange interval="14000" chance="50"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="1000"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="55" attack="50"/>
+    <attack name="ice" interval="2000" chance="62" range="7" target="1" min="-5020" attack="-6090">
+      <attribute key="shootEffect" value="ice"/>
+	  <attribute key="areaEffect" value="iceattack"/>
+    </attack>
+	<attack name="energy" interval="3000" chance="67" range="7" target="1" min="-8080" max="-9050">
+	  <attribute key="shootEffect" value="energyball"/>
+	  <attribute key="areaEffect" value="energy"/>
+	  </attack>
+    <attack name="manadrain" interval="2000" chance="76" range="7" min="-5005" max="-6055">
+	<attribute key="shootEffect" value="ice"/>
+	</attack>
+    <attack name="speed" interval="3000" chance="48" range="7" speedchange="-550" duration="40000">
+	  <attribute key="shootEffect" value="smallice"/>
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </attack>
+    <attack name="fire" interval="6000" chance="13" range="7" radius="3" target="1" min="160" max="-2500">
+      <attribute key="shootEffect" value="burstarrow"/>
+      <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="firefield" interval="2000" chance="14" range="7" radius="2" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="energy" interval="3000" chance="65" length="5" spread="5" min="-5500" max="-7050">
+      <attribute key="areaEffect" value="bigclouds"/>
+    </attack>
+
+  </attacks>
+  <defenses armor="25" defense="20">
+    <defense name="healing" interval="4000" chance="85" min="20000" max="40000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="4000" chance="40" duration="9000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+
+  </defenses>
+  <elements>
+	<element physicalPercent="35"/>
+	<element holyPercent="20"/>
+	<element deathPercent="25"/>
+  </elements>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity ice="1"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="5">
+    <summon name="warlock" interval="3000" chance="15"/>
+	<summon name="green djinn" interval="2000" chance="15"/>
+  </summons>
+  <voices interval="5000" chance="50">
+    <voice sentence="Dont go to Difirage"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+	<item id="2148" countmax="50" chance1="100000" chancemax="0"/>
+    <item id="7368" countmax="3" chance1="400"/> 
+    <item id="2146" countmax="3" chance1="100"/> 
+	<item id="1980" chance="100000">
+		<inside>
+			<item id="2656" chance="380"/> 
+			<item id="2466" chance="187"/> 
+			<item id="2436" chance="200"/> 
+			<item id="2123" chance="1200"/> 
+		</inside>
+	</item>
+  </loot>
+</monster>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Abyssal Cursed Stone" nameDescription="um Abyssal Cursed Stone" species="hard" race="blood" experience="2150" speed="190" manacost="490">
+    <health now="5035" max="5035"/>
+    <look type="67" head="20" body="30" legs="40" feet="50" corpse="6005"/>
+    <targetchange interval="60000" chance="0"/>
+    <strategy attack="100" defense="0"/>
+    <flags>
+      <flag summonable="1"/>
+      <flag attackable="1"/>
+      <flag hostile="1"/>
+      <flag illusionable="1"/>
+      <flag convinceable="1"/>
+      <flag pushable="0"/>
+      <flag canpushitems="1"/>
+      <flag staticattack="80"/>
+      <flag lightlevel="0"/>
+      <flag lightcolor="0"/>
+      <flag targetdistance="1"/>
+      <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+      <attack name="melee" interval="2000" skill="80" attack="80"/>
+	  <attack name="strength" interval="1000" chance="13" target="1" min="-500" max="-585">
+		<attibute key="shootEffect" value="largerock"/>
+		</attack>
+    </attacks>
+    <defenses armor="24" defense="25"/>
+	<elements>
+	<element energyPercent="98"/>
+        <element physicalPercent="35"/>
+	<element earthPercent="68"/>
+	<element firePercent="68"/>
+	<element icePercent="58"/>
+	<element deathPercent="48"/>
+	<element holyPercent="58"/>
+  </elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+    <voices interval="2000" chance="5">
+      <voice sentence="help"/>
+      <voice sentence="to kil me?."/>
+    </voices>
+    <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+     <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="3968" chance="200"/> 
+        <item id="2647" chance="1500"/> 
+        <item id="2475" chance="400"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Imortal Serve" species="undead" tp="1" nameDescription="serve" race="blood" experience="435" speed="170">
+	<health now="81234567" max="81234567"/>
+	<look type="78" corpse="7349"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag staticattack="78"/>
+		<flag targetdistance="5"/>
+	</flags>
+	<attacks>
+		<attack name="poisoncondition" interval="2000" min="-55" max="-99" start="-11" chance="30"/>
+		<attack name="physical" interval="3000" chance="40" radius="1" target="1" range="5" min="-1000" max="-1005">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="physical" interval="6000" chance="40" radius="1" target="1" range="5" min="-1000" max="-1005">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="suddendeath"/>
+		</attack>
+		<attack name="speed" interval="3500" chance="15" radius="3" target="1" range="7" duration="20000" speed="-1000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="manadrain" interval="4000" chance="10" radius="1" target="1" range="5" min="-1000" max="-1010">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="11" defense="12">
+		<defense name="healing" interval="8000" chance="85" min="70005" max="80005">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+		<defense name="invisible" interval="3000" chance="50" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<immunities>
+		<immunity name="energy"/>
+		<immunity name="fire"/>
+		<immunity name="poison"/>
+		<immunity name="paralyze"/>
+		<immunity name="invisible"/>
+	</immunities>
+	<summons maxSummons="3">
+		<summon name="Ghoul" interval="8000" chance="10"/>
+	</summons>
+</monster>

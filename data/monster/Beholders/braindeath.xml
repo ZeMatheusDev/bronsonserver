@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Saurons Possessed Beholder" nameDescription="um Saurons Possessed Beholder" race="undead" experience="15895" speed="270" manacost="0">
+	<health now="11225" max="11225"/>
+	<look type="256" corpse="6037"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="0"/>
+		<flag targetdistance="5"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1000" skill="60" attack="55"/>
+		<attack name="energy" interval="2500" chance="25" range="7" min="-550" max="-650">
+			<attribute key="shootEffect" value="energy"/>
+		</attack>
+		<attack name="fire" interval="2000" chance="20" range="7" min="-500" max="-600">
+			<attribute key="shootEffect" value="fire"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="20" range="7" min="-400" max="-590">
+			<attribute key="shootEffect" value="suddendeath"/>
+			<attribute key="areaEffect" value="mortarea"/>
+		</attack>
+		<attack name="poison" interval="2000" chance="25" range="7" min="-700" max="-800">
+			<attribute key="shootEffect" value="poison"/>
+		</attack>
+		<attack name="manadrain" interval="5000" chance="30" range="7" min="-200" max="-340">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+		<attack name="speed" interval="3000" chance="10" range="7" speedchange="-600" duration="20000">
+			<attribute key="areaEffect" value="redshimmer"/>
+		</attack>
+	</attacks>
+	<defenses armor="13" defense="26">
+		<defense name="healing" interval="2000" chance="30" min="0" max="1">
+			<attribute key="areaEffect" value="energy"/>
+		</defense>
+	</defenses>
+	  <elements>
+  <element energyPercent="65"/>
+  <element earthPercent="80"/>
+  <element icePercent="60"/>
+  <element firePercent="50"/>
+  <element holyPercent="70"/>>
+  </elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You have disturbed my thoughts!"/>
+		<voice sentence="Let me turn you into something more useful!"/>
+		<voice sentence="Let me taste your brain!"/>
+		<voice sentence="You will be punished!"/>
+	</voices>
+	<loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="3972" chance="1444" /> 
+    <item id="2348" chance="1"/>
+	    <item id="2518" chance="1400"/> -- b shield
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/>
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="2436" chance="1411"/> 
+        <item id="7895" chance="800"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="High Elf" nameDescription="um High Elf" race="blood" experience="2000" speed="240" manacost="0">
+  <health now="4200" max="4200"/>
+  <look type="203" head="20" body="30" legs="40" feet="50" corpse="6011"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="130" attack="128"/>
+   <attack name="holy" interval="1700" chance="22" range="5" radius="2" target="1" min="-200" max="-390">
+    <attribute key="areaEffect" value="holyarea"/>
+    <attribute key="shootEffect" value="holy"/>
+    </attack>
+  </attacks>
+  <defenses armor="15" defense="25">
+    <defense name="healing" interval="1000" chance="20" min="90" max="120">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="7" speedchange="300" duration="10000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="50"/>
+		<element holyPercent="55"/>
+                <element deathPercent="80"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="You desecrated this temple!"/>
+    <voice sentence="Noone will stop my ascension!"/>
+    <voice sentence="My powers are divine!"/>
+    <voice sentence="Muahahaha!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2466" chance="50" /> 
+	    <item id="7893" chance="400"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2152" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="2505" chance="500"/>
+        <item id="7438" chance="500"/>
+        <item id="2507" chance="501"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Smigol" nameDescription="a betrayed wraith" race="undead" experience="500000" speed="700" manacost="0">
+<health now="94150" max="94150"/>
+<look type="233" corpse="6316"/>
+<targetchange interval="5000" chance="8"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-1200" max="-2650"/>
+<attack name="fire" interval="1000" chance="15" range="7" radius="4" target="1" min="-6920" max="-8780">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="physical" interval="1000" chance="28" range="7" target="0" radius="7" min="-5590" max="-6699">
+<attribute key="areaEffect" value="yellowspark"/>
+</attack>
+<attack name="fire" interval="1000" chance="30" length="8" spread="3" min="-3050" max="-5350">
+<attribute key="areaEffect" value="fireattack"/>
+</attack>
+<attack name="lifedrain" interval="1500" chance="34" radius="1" target="1" min="-2900" max="-4899">
+<attribute key="shootEffect" value="whirlwindaxe"/>
+<attribute key="areaEffect" value="stun"/>
+</attack>
+<attack name="outfit" interval="3000" chance="15" range="7" monster="deer" duration="12000">
+<attribute key="areaEffect" value="SMOKE"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="4000" chance="20" max="500">
+<attribute key="areaEffect" value="yellowbubble"/>
+</defense>
+</defenses>
+<elements>
+<element physicalPercent="65"/>
+<element holyPercent="80"/>
+<element deathPercent="80"/>
+<element energyPercent="80"/>
+<element icePercent="80"/>
+<element earthPercent="80"/>
+<element firePercent="80"/>
+<element physicalPercent="80"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity fire="0"/>
+<immunity invisibility="1"/>
+</immunities>
+<voices interval="7000" chance="10">
+<voice sentence="Muahahahaha"/>
+</voices>
+<loot>
+<item id="2672" countmax="100" chance="25000"/><!-- dragom ham -->
+<item id="2672" countmax="100" chance="25000"/><!-- dragom ham -->
+<item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="11299" chance="1502"/><!-- drakinata-->
+<item id="11301" chance="500"/><!-- chaos blade-->
+<item id="11295" chance="503"/><!-- zenit cuirass -->
+<item id="11298" chance="501"/><!-- zenit legs -->
+<item id="11296" chance="502"/><!-- zenit helmet -->
+<item id="11297" chance="503"/><!-- zenit shoes -->
+<item id="11302" chance="1504"/><!-- drachaku -->
+<item id="8856" chance="8504"/><!-- bow -->
+</inside>
+</item>
+</loot>
+</monster>

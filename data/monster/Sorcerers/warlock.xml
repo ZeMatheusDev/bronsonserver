@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="warlock" nameDescription="a warlock" race="blood" experience="4000" speed="265" manacost="0">
+  <health now="3500" max="3500"/>
+  <look type="130" head="19" body="71" legs="128" feet="128" addons="1" corpse="6080"/>
+  <targetchange interval="5000" chance="30"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="4"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="1000"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="100" attack="110"/>
+    <attack name="firefield" interval="1000" chance="10" range="7" radius="4" target="1">
+      <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="manadrain" interval="1000" chance="30" range="7" min="-200" max="-340">
+    <attribute key="areaEffect" value="redshimmer"/>
+    </attack>
+    <attack name="physical" interval="1000" chance="20" range="7" min="-200" max="-390">
+    <attribute key="shootEffect" value="suddendeath"/>
+    <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+  </attacks>
+  <defenses armor="20" defense="20">
+    <defense name="healing" interval="1000" chance="25" min="60" max="100">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="invisible" interval="3000" chance="10" duration="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+
+  </defenses>
+ <elements>
+  <element icePercent="90"/>
+  <element earthPercent="60"/>
+  <element physicalPercent="9"/>
+  <element holyPercent="90"/>
+  <element deathPercent="55"/>
+  <element firePercent="90"/>
+  </elements>
+	<immunities>
+                <immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Learn the secret of our magic! YOUR death!"/>
+    <voice sentence="Even a rat is a better mage than you."/>
+    <voice sentence="We don't like intruders!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2689" countmax="100" chance1="5000" chancemax="0"/> 
+        <item id="2656" chance="700"/> 
+        <item id="2436" chance="1200"/>
+        <item id="2323" chance="1500"/>
+        <item id="2466" chance="51"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

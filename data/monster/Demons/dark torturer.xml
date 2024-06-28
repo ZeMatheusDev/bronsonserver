@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Dark Torturer" nameDescription="a Dark Torturer" race="blood" experience="4650" speed="285" manacost="0">
+	<health now="7350" max="7350"/>
+	<look type="234" corpse="6328"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="900"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="2000" skill="105" attack="120"/>
+		<attack name="death" interval="1000" chance="12" length="8" spread="4" min="0" max="0">
+			<attribute key="areaEffect" value="purplenote"/>
+		</attack>
+		<attack name="physical" interval="2000" chance="22" range="7" min="-90" max="-800">
+			<attribute key="shootEffect" value="throwingknife"/>
+		</attack>
+	</attacks>
+	<defenses armor="50" defense="60"/>
+	<elements>
+		<element energyPercent="55"/>
+		<element earthPercent="60"/>
+		<element icePercent="-15"/>
+		<element holyPercent="-20"/>
+		<element deathPercent="40"/>
+	</elements>
+	<immunities>
+		<immunity fire="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<voices interval="5000" chance="10">
+		<voice sentence="You like it, don't you?"/>
+		<voice sentence="IahaEhheAie!"/>
+	</voices>
+	<loot>
+		<item id="7368" chance1="8500" countmax="2"/> 
+		<item id="2148" countmax="82" chance1="100000" chancemax="0"/> 
+                                <item id="2003" chance="100000"> 
+			<inside>
+				<item id="2476" chance="800"/> 
+				<item id="5741" chance="810"/> 
+				<item id="3962" chance="860"/> 
+				<item id="2477" chance="850"/> 
+				<item id="2528" chance="888"/>
+			</inside>
+		</item>
+	</loot>
+</monster>

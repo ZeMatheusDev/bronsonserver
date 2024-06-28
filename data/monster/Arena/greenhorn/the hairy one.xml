@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gnaraud" nameDescription="Gnaraud" race="blood" experience="45000" speed="740">
+	<health now="60000" max="60000"/>
+	<look type="236" head="0" body="0" legs="0" feet="0" corpse="6320"/>
+	<targetchange interval="60000" chance="0"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="130" attack="175" />
+    <attack name="physical" interval="3000" chance="55" range="7" min="-1300" max="-1605">
+      <attribute key="shootEffect" value="largerock"/>
+     </attack>
+	<attack name="death" interval="2000" chance="60" range="7" radius="1" target="1" min="-1400" max="-1800">
+			<attribute key="areaEffect" value="mortarea"/>
+			<attribute key="shootEffect" value="death"/>
+    </attack>
+  </attacks>
+  <defenses armor="39" defense="44">
+    <defense name="speed" interval="2000" chance="47" speedchange="380" duration="8000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+          <element earthPercent="20"/>
+          <element physicalPercent="38"/>
+          <element icePercent="10"/>
+          <element firePercent="30"/>
+          <element deathPercent="15"/>
+          <element holyPercent="10"/>
+     </elements>
+  <immunities>
+    <immunity energy="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Gnarussss"/>
+    <voice sentence="Rag Rag"/>
+  </voices>
+   <loot>
+   <item id="2148" countmax="82" chance1="100000" chancemax="0"/> 
+   <item id="2645" chance="1622"/> 
+   <item id="2152" countmax="3" chance1="20000" chancemax="0"/>
+   <item id="2393" chance="1600"/> 
+   <item id="5741" chance="1600"/> 
+   <item id="7419" chance="300"/> 
+   <item id="2666" countmax="5" chance1="30000" chancemax="0"/>
+   <item id="1987" chance="10"> 
+      <inside>
+         <item id="2463" chance="2000"/> 
+          <item id="7427" chance="800"/>
+     </inside>
+   </item>
+ </loot>
+</monster>
+
+  

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ragnaros" nameDescription="Ragnaros" race="fire" experience="280000" speed="300" manacost="0">
+  <health now="84000" max="84000"/>
+  <look type="243" corpse="8964"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="120" attack="100" fire="650"/>
+    <attack name="firefield" interval="2000" chance="15" range="7" radius="4" target="1">
+    <attribute key="shootEffect" value="fire"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="15" length="10" min="-900" max="-1000">
+	<attribute key="areaEffect" value="fireattack"/>
+	</attack>
+    <attack name="fire" interval="1000" chance="13" target="3" radius="4" min="-900" max="-1450">
+    <attribute key="areaEffect" value="firearea"/>
+    </attack>
+    <attack name="fire" interval="1000" chance="19" range="7" radius="5" target="1" min="-910" max="-1015">
+    <attribute key="shootEffect" value="fire"/>
+    <attribute key="areaEffect" value="firearea"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="25"/>
+  	<elements>
+		<element energyPercent="65"/>
+		<element earthPercent="80"/>
+		<element icePercent="30"/>
+		<element holyPercent="25"/>
+                <element deathPercent="75"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity fire="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <summons maxSummons="4">
+    <summon name="spirit of fire" interval="1000" chance="20" max="2"/>
+    <summon name="spirit of fire" interval="1000" chance="17" max="1"/>
+    <summon name="spirit of fire" interval="1000" chance="15" max="1"/>
+  </summons>
+  <loot>
+   <item id="2160" countmax="10" chance1="100000" chancemax="0"/> 
+   <item id="2152" countmax="4" chance1="8888" chancemax="0"/> 
+   <item id="9932" chance="1000"/> 
+   <item id="2432" chance="92000"/> 
+   <item id="2392" chance="92000"/> 
+   <item id="2187" chance="92000"/> 
+   <item id="8886" chance="5000"/> 
+   <item id="8867" chance="1010"/> 
+   <item id="2421" chance="8210"/> 
+   <item id="2495" chance="8210"/>  
+   </loot>
+</monster>

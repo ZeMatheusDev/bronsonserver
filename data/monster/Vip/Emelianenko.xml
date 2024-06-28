@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Emelianenko" nameDescription="Emelianenko" race="blood" experience="450000" speed="850" manacost="0">
+	<health now="50000" max="50000"/>
+	<look type="323" corpse="9107"/>
+	<targetchange interval="2000" chance="10"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="1"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="0"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="1500" min="-2200" max="-4500"/>
+		<attack name="lifedrain" interval="3000" chance="90" range="1" min="-3300" max="-4400">
+			<attribute key="areaEffect" value="stun"/>
+		</attack> 	
+	</attacks>
+  <defenses armor="30" defense="15">
+    <defense name="healing" interval="8000" chance="50" min="1700" max="2000">
+      <attribute key="areaEffect" value="sleep"/>
+    </defense>
+  </defenses>
+  <elements>
+	<element energyPercent="98"/>
+        <element physicalPercent="70"/>
+	<element earthPercent="98"/>
+	<element firePercent="98"/>
+	<element icePercent="98"/>
+	<element deathPercent="98"/>
+	<element holyPercent="98"/>
+  </elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity lifedrain="1"/>
+		<immunity drunk="1"/>
+		<immunity drown="1"/>
+	</immunities>
+	<voices interval="2500" chance="10">
+		<voice sentence="E ele que a gente quer."/>
+		<voice sentence="BIIIIIIIIRL!"/>
+		<voice sentence="Aqui nos constroi fibra."/>
+		<voice sentence="Trapezio Descendente"/>
+	</voices>
+	<loot>
+                        <item id="2470" chance="300"/><!-- golden legs -->
+                        <item id="2471" chance="300"/><!-- golden helmet -->
+                        <item id="2646" chance="300"/><!-- golden boots -->
+                        <item id="2522" chance="301"/><!-- great shield -->
+                        <item id="2466" chance="301"/><!-- golden armor -->
+                        <item id="2160" countmax="20" chance1="10000" chancemax="0"/>
+                        <item id="2086" chance="35010"/><!-- purple key -->
+                        <item id="2396" chance="2500"/><!-- ice rapier -->
+                        <item id="7382" chance="2500"/> <!-- demonrage sword -->
+	</loot>
+</monster>

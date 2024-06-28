@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+  <monster name="Wyrm" nameDescription="a wyrm" race="blood" species="fire" experience="42000000" speed="900" manacost="0"> 
+    <health now="1200000" max="1200000"/> 
+    <look type="291" corpse="8941"/> 
+    <targetchange interval="7000" chance="75"/> 
+    <strategy attack="100" defense="0"/> 
+    <flags> 
+      <flag summonable="0"/> 
+      <flag attackable="1"/> 
+      <flag hostile="1"/> 
+      <flag illusionable="0"/> 
+      <flag convinceable="0"/> 
+      <flag pushable="0"/> 
+      <flag canpushitems="1"/> 
+      <flag staticattack="85"/> 
+      <flag lightlevel="0"/> 
+      <flag lightcolor="0"/> 
+      <flag targetdistance="1"/> 
+      <flag runonhealth="1"/> 
+    </flags> 
+ <attacks> 
+    <attack name="melee" interval="1000" skill="150" attack="170"/> 
+ 
+    <attack name="energy" interval="3000" chance="81" radius="4" target="0" min="-6000" max="-9520"> 
+      <attribute key="areaEffect" value="yellowenergy"/> 
+    </attack> 
+	
+	<attack name="energy" interval="2000" chance="80" range="7" target="1" min="-5101" max="-10123">
+	<attribute key="areaEffect" value="purpleenergy"/>
+	<attribute key="shootEffect" value="energy"/>
+	</attack>
+ 
+    <attack name="physical" interval="2000" chance="91" length="5" spread="2" min="-7595" max="-9144"> 
+        <attribute key="areaEffect" value="poff"/> 
+    </attack> 
+ 
+    <attack name="energy" interval="1000" chance="70" length="4" spread="4" min="-7010" max="-9170"> 
+        <attribute key="areaEffect" value="purpleenergy"/> 
+    </attack> 
+    <attack name="lifedrain" interval="2000" chance="84" radius="6" target="1" min="-4900" max="-6899">
+    <attribute key="shootEffect" value="whirlwindaxe"/>
+    <attribute key="areaEffect" value="stun"/>
+</attack>
+ 
+ </attacks> 
+    <defenses armor="50" defense="60"> 
+      <defense name="healing" interval="4000" chance="105" min="20005" max="40005"/> 
+      <attribute key="areaEffect" value="blueshimmer"/> 
+    </defenses>
+	<elements>		
+		<element icePercent="40"/>
+		<element deathPercent="40"/>
+                <element physicalPercent="30"/>
+    </elements>
+    <immunities> 
+      <immunity energy="1"/> 
+      <immunity paralyze="1"/> 
+      <immunity invisible="1"/>
+      <immunity fire="1"/>
+      <immunity earth="1"/>
+    </immunities> 
+    <voices interval="3000" chance="15"> 
+      <voice sentence="I Am the King"/> 
+      <voice sentence="Eletrzz!"/> 
+    </voices> 
+    <loot> 
+      <item id="2672" countmax="3" chance1="9000" chancemax="0"/> 
+      <item id="2148" countmax="100" chance1="30000" chancemax="0"/> 
+      <item id="7422" chance="10000"/> 
+      <item id="12362" chance="12000"/> 
+      <item id="8921" chance="13000"/> 
+	  <item id="7411" chance="14000"/> 
+      <item id="2546" countmax="10" chance1="6000" chancemax="0"/> 
+      <item id="1987" chance="100000">  
+        <inside> 
+          <item id="2148" countmax="100" chance1="15000" chancemax="0"/> 
+          <item id="9932" chance="43300"/>
+	
+        </inside> 
+      </item> 
+    </loot> 
+  </monster>
+  
+  
+  

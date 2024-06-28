@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Belzebuth Minion" nameDescription="um Belzebuth Minion" race="VENOM" experience="7200" speed="330" manacost="0">
+  <health now="20000" max="20000"/>
+  <look type="79" head="20" body="30" legs="40" feet="50" corpse="6021"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" min="-430" max="-500" poison="100"/>
+    <attack name="poison" interval="1000" chance="12" range="7" min="-415" max="-435">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="lifedrain" interval="2000" chance="34" length="7" spread="0" min="-500" max="-599">
+    <attribute key="areaEffect" value="greenbubble"/>
+    </attack>
+    <attack name="earth" interval="1000" chance="15" radius="5" target="0" min="-500" max="-600">
+    <attribute key="areaEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="25" defense="20">
+    <defense name="speed" interval="1000" chance="8" speedchange="350" duration="9000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  	<elements>
+		<element energyPercent="55"/>
+		<element earthPercent="80"/>
+		<element icePercent="55"/>
+		<element firePercent="80"/>
+		<element holyPercent="60"/>
+                <element deathPercent="70"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> 
+    <item id="3972" chance="900" /> 
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="2150" countmax="3" chance1="5000" chancemax="0"/> 
+        <item id="2148" countmax="1" chance1="100000" chancemax="1"/> 
+        <item id="7886" chance="1100"/>
+        <item id="8880" chance="250"/> 
+        <item id="2439" chance="1500"/> 
+        <item id="2474" chance="150"/> 
+      </inside>
+    </item>
+  </loot>
+</monster>

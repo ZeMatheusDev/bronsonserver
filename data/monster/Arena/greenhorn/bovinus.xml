@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Greenus" nameDescription="greenus" race="blood" experience="58000" speed="570">
+	<health now="80000" max="80000"/>
+	<look type="358" head="20" body="30" legs="40" feet="50" corpse="5527"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag staticattack="78"/>
+	</flags>
+	<attacks>
+	<attack name="melee" interval="2000" skill="180" attack="140"/>
+
+	<attack name="earth" interval="2000" chance="57" radius="3" target="0" min="-1300" max="-1500">
+		<attribute key="areaEffect" value="redshimmer"/>
+	</attack>
+
+	<attack name="earth" interval="6000" chance="78" length="4" spread="2" min="-1500" max="-2300">
+		<attribute key="areaEffect" value="yellowbubble"/>
+	</attack>
+
+	<attack name="speed" interval="2000" chance="16" range="4" target="1" radius="2" speedchange="-700" duration="30000">
+		<attribute key="areaEffect" value="poison"/>
+	</attack>
+</attacks>
+  <defenses armor="75" defense="65">
+    <defense name="healing" interval="3000" chance="30" min="2000" max="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="2000" chance="30" speedchange="120" duration="7000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+		<element energyPercent="75"/>
+		<element earthPercent="80"/>
+		<element icePercent="50"/>
+		<element firePercent="-20"/>
+		<element holyPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity death="1"/>
+		<immunity invisible="1"/>
+                <immunity paralyze="1"/>
+	</immunities>
+  <voices interval="3000" chance="40">
+    <voice sentence="You are crazy"/>
+    <voice sentence="Greenus Power!"/>
+    <voice sentence="Greeeeenus!"/>
+  </voices>
+  <loot>
+	<item id="2148" chance1="100000" countmax="100" /> 
+	<item id="2148" chance1="100000" countmax="100" />
+	<item id="2235" chance="27" /> 
+	<item id="2237" chance="100" /> 
+	<item id="2416" chance="7333" /> 
+	<item id="2645" chance="1533" /> 
+	<item id="6500" chance="4800" /> 
+	<item id="5888" chance="420" /> 
+	<item id="5887" chance="340" /> 
+	<item id="1987" chance="100" > 
+		<inside>
+			<item id="2492" chance="733" /> 
+			<item id="7365" chance1="6666" ciuntmax="3"/> 
+			<item id="9808" chance="9500" /> 
+			<item id="2477" chance="800" /> 
+			<item id="2444" chance="999" /> 
+			<item id="2417" chance="2200" /> 
+			<item id="2509" chance="5111" /> 
+			<item id="5944" chance="7600" countmax="1" /> 
+			<item id="3957" chance="2800" /> 
+			<item id="2209" chance="3200" /> 
+		</inside>
+	</item>
+  </loot>
+</monster>

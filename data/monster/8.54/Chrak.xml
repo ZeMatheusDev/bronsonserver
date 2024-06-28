@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Ungoliant" nameDescription="Ungoliant" race="venom" experience="358000" speed="420" manacost="0">
+  <health now="80000" max="80000"/>
+  <look type="208" head="20" body="30" legs="40" feet="50" corpse="5977"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="190" attack="140"/>
+    <attack name="poison" interval="2000" chance="20" range="7" min="-500" max="-950">
+      <attribute key="shootEffect" value="earth"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="speed" interval="2000" chance="15" range="7" speedchange="-450" duration="25000">
+      <attribute key="shootEffect" value="poison"/>
+      <attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="poisonfield" interval="1000" chance="18" range="7" radius="4" target="1">
+      <attribute key="shootEffect" value="poison"/>
+    </attack>
+    <attack name="earth" interval="1000" chance="21" radius="4" target="0" min="-1000" max="-2050">
+      <attribute key="shootEffect" value="poison"/>
+    </attack>
+  </attacks>
+  <defenses armor="30" defense="33">
+    <defense name="healing" interval="1000" chance="17" min="1225" max="1475">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="speed" interval="1000" chance="8" speedchange="345" duration="6000">
+      <attribute key="areaEffect" value="redshimmer"/>
+    </defense>
+  </defenses>
+  <immunities>
+    <immunity earth="1"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <summons maxSummons="3">  
+   <summon name="Laracna" interval="1000" chance="13" max="2"/>
+  <summon name="Laracna" interval="1000" chance="13" max="1"/>
+  </summons>
+  <loot>
+    <item id="2152" countmax="100" chance1="100000" chancemax="0"/>
+    <item id="8880" chance="4000"/>
+    <item id="8872" chance="3000"/>
+    <item id="2195" chance="4000"/>
+    <item id="5879" countmax="1" chance1="100000" chancemax="0"/>
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="2149" countmax="12" chance="10000"/>
+        <item id="2148" countmax="40" chance1="100000" chancemax="0"/>
+        <item id="2536" chance="9000"/>
+        <item id="7887" chance="5000"/>
+        <item id="2478" chance="10000"/>
+        <item id="7379" chance="5000"/>
+      </inside>
+    </item>
+  </loot>
+</monster>

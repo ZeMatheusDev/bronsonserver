@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Smigol" nameDescription="a betrayed wraith" race="undead" experience="3100" speed="1500" manacost="0">
+<health now="3001" max="3001"/>
+<look type="233" corpse="6316"/>
+<targetchange interval="5000" chance="78"/>
+<strategy attack="100" defense="0"/>
+<flags>
+<flag summonable="0"/>
+<flag attackable="1"/>
+<flag hostile="1"/>
+<flag illusionable="1"/>
+<flag convinceable="0"/>
+<flag pushable="0"/>
+<flag canpushitems="1"/>
+<flag canpushcreatures="0"/>
+<flag targetdistance="1"/>
+<flag staticattack="90"/>
+<flag runonhealth="0"/>
+</flags>
+<attacks>
+<attack name="melee" interval="2000" min="-1200" max="-2650"/>
+<attack name="fire" interval="1000" chance="15" range="7" radius="4" target="1" min="-69" max="-87">
+<attribute key="shootEffect" value="fire"/>
+<attribute key="areaEffect" value="firearea"/>
+</attack>
+<attack name="physical" interval="1000" chance="28" range="7" target="0" radius="7" min="-55" max="-66">
+<attribute key="areaEffect" value="yellowspark"/>
+</attack>
+<attack name="fire" interval="1000" chance="30" length="8" spread="3" min="-30" max="-53">
+<attribute key="areaEffect" value="fireattack"/>
+</attack>
+<attack name="lifedrain" interval="1500" chance="54" radius="1" target="1" min="-29" max="-48">
+<attribute key="shootEffect" value="whirlwindaxe"/>
+<attribute key="areaEffect" value="stun"/>
+</attack>
+<attack name="outfit" interval="3000" chance="15" range="7" monster="deer" duration="12000">
+<attribute key="areaEffect" value="SMOKE"/>
+</attack>
+</attacks>
+<defenses armor="25" defense="25">
+<defense name="healing" interval="6000" chance="50" max="4500">
+<attribute key="areaEffect" value="yellowbubble"/>
+</defense>
+</defenses>
+<elements>
+<element physicalPercent="30"/>
+<element holyPercent="10"/>
+<element deathPercent="10"/>
+<element energyPercent="10"/>
+<element icePercent="10"/>
+<element earthPercent="10"/>
+<element firePercent="10"/>
+<element physicalPercent="10"/>
+</elements>
+<immunities>
+<immunity paralyze="1"/>
+<immunity fire="0"/>
+<immunity invisibility="1"/>
+</immunities>
+<voices interval="4000" chance="70">
+<voice sentence="Muahahahaha Edoras Is Mine!"/>
+</voices>
+<loot>
+<item id="2672" countmax="100" chance="25000"/><!-- dragom ham -->
+<item id="2672" countmax="100" chance="25000"/><!-- dragom ham -->
+<item id="1987" chance="100000"><!-- bag -->
+<inside>
+<item id="8856" chance="8504"/><!-- bow -->
+</inside>
+</item>
+</loot>
+</monster>
